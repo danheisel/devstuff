@@ -16,9 +16,10 @@ function csv_to_array($filename = '', $delimiter = ',') {
     }
     return $data;
 }
-
-$keys = csv_to_array('url-match.csv');
-$nodes = csv_to_array('two-column.csv');
+$keyscsv = ('url-match.csv');
+$nodesfile = ('two-column.csv');
+$keys = csv_to_array($keysfile);
+$nodes = csv_to_array($nodesfile);
 $updatednodes = array();
 foreach ($nodes as $node) {
     $content = $node['content'];
@@ -44,6 +45,7 @@ foreach ($nodes as $node) {
     $node['right_callout'] = $updatedrightcallout;
     $updatednodes[] = $node;
 }
+$layout = basename($nodesfile, '.csv'); 
 $fileName = 'updated-' . $layout . '-nodes.csv';
 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header('Content-Description: File Transfer');
