@@ -1,0 +1,1 @@
+Your exported nodes CSV has to contain at least one column marked, 'content' to function.

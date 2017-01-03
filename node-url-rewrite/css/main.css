@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #ededed;
+    font: 100% 'Helvetica';
+}
+.formdiv {
+    width: 50%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 30px;
+}
+h1 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+form {
+    clear: both;
+    width: 100%;
+    margin: 20px;
+}
+form label {
+    clear: both;
+    margin: 10px 0;
+    font-weight: bold;
+}
+form select {
+    clear: both;
+    padding: 10px;
+    margin: 15px 0;
+    border: solid #ededed 2px;
+}
+form select.error {
+    border: red 2px solid;
+}
+form input {
+    clear: both;
+    padding: 10px;
+}
+form input[type="submit"] {
+    background: #84b818;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+}

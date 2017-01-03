@@ -1,0 +1,1 @@
+Your key file has to contain the columns start_url and nid.
